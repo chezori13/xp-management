@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "a313bdab-922c-4cd6-8484-3ae0d64e4314",
+		"name": "xp-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getExperience",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/experience/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"experience",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addExperiencePoints",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"points\": 150\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/experience/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"experience",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
